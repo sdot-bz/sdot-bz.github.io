@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer.M - Study Group</title>
+    <link rel="icon" type="image/x-icon" href="test2.jfif">
+    <link rel="stylesheet" href="new 11.css">
+</head>
+<body>
+
+    <div class="NavScroll">
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('uprising')">How it Became a Thing</a>
+        <a onclick="showSection('profile')">Profiles</a>
+        <a onclick="showSection('forms')">Forms to Sign Up</a>
+        <a onclick="showSlideshow()">Gallery</a>
+    </div>
+
+<div id="home" class="section">
+    
+    <h1>Welcome to Spencer's Study Group</h1>
+    <p class="intro-text">A place where students learn, grow, and succeed together in a supportive and close-knit community.</p>
+    
+  
+    <div class="about-section">
+        <img src="spence.jpg" alt="Spencer" class="profile-pic">
+        <p>About Me:I am an IT major looking forward to graduate from IJC, I sometimes struggle with work and I am not afraid to ask for help when needed.</p>
+    </div>
+
+    
+    <div class="mission-section">
+        <h2>Our Mission</h2>
+        <p>Our mission is to create a supportive and engaging environment where students can share their knowledge, overcome academic challenges, and help each other reach new heights. We believe that learning is more fun and effective when done together.</p>
+    </div>
+
+    
+    <div class="why-join-section">
+        <h2>Why Join Spencer's Study Group?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="teamwork.jfif" alt="Teamwork" class="feature-image">
+                <h3>Collaborative Learning</h3>
+                <p>Work together to understand complex topics, tackle assignments, and prepare for exams. It's not just about studying; it's about building lasting connections.</p>
+            </div>
+            <div class="feature">
+                <img src="support.jfif" alt="Support" class="feature-image">
+                <h3>Supportive Environment</h3>
+                <p>Feel motivated and supported by peers who share similar academic goals. You're not alone in this journey; we're all in it together.</p>
+            </div>
+            <div class="feature">
+                <img src="growth.jfif" alt="Growth" class="feature-image">
+                <h3>Personal Growth</h3>
+                <p>Develop skills that extend beyond the classroom, like critical thinking, communication, and teamwork.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="uprising" class="section">
+    <h2>How Study Groups Became a Thing within IJC</h2>
+    <p>Study groups began as a way for students to come together and share their knowledge. By collaborating and discussing material in groups, they could better understand complex topics, enhance critical thinking, and gain different perspectives.</p>
+    <p>In a small school like ours, where everyone knows each other by name, study groups can be an especially powerful tool for learning. The smaller class sizes mean students have the chance to build deeper connections, and study groups can take that even further. When you’re studying with friends or classmates you see every day, it feels more like a shared journey than a chore. It’s not just about hitting the books—it's about working together, cheering each other on, and making the learning experience a little less daunting. This close-knit setting allows you to really get to know each other's strengths and help each other out in a meaningful way.</p>
+</div>
+	<div id="benefits" class="section">
+    <h2>Benefits of Study Groups</h2>
+    <p>Study groups offer numerous advantages, particularly in a small school where students share a tight-knit community. One of the best things about study groups at a small school is the variety of perspectives that each person brings. Because you’re working with the same group of classmates, you get to know how others think and approach problems. This helps in finding new ways to understand challenging topics and creates a supportive learning environment.</p>
+    <p>In addition to academic benefits, study groups provide a space where students can reduce stress and lean on one another for support. Let’s face it: school can be stressful, especially when everyone is juggling multiple responsibilities in a small community. Study groups provide a space where you can share that stress, talk about what’s challenging you, and find solutions together. Knowing that you’re not the only one struggling with a certain topic can be a big relief.</p>
+</div>
+	
+	
+
+    <div id="profile" class="section">
+        
+        
+    <h2>Student Profiles</h2>
+	<div id="profiles" class="section">
+    <h2>Profiles</h2>
+    <p>In our small study group, we find that everyone brings something unique to the table, making the learning process a lot more enriching. Whether it’s breaking down tough math problems, sharing a fresh perspective on history, or just offering some much-needed encouragement, every member plays a vital role in the group's success.</p>
+    <div class="profile-tabs">
+       
+    </div>
+</div>
+    <div class="profile-tabs">
+        <input type="radio" id="tab1" name="profile-tab" checked>
+        <label for="tab1">Spencer</label>
+
+        <input type="radio" id="tab2" name="profile-tab">
+        <label for="tab2">Alex</label>
+
+        <input type="radio" id="tab3" name="profile-tab">
+        <label for="tab3">Jordan</label>
+
+        <div class="profile-container">
+            <div class="profile-card" id="profile1">
+                <h3>Spencer</h3>
+                <img src="pfpic.jpg" alt="Spencer" class="profile-pic">
+                <p>Age: 19</p>
+                <p>Location: Big Creek, Independence Village </p>
+                <p>Interests: Gym, Swimming, Hiking</p>
+            </div>
+            <div class="profile-card" id="profile2">
+                <h3>Alex</h3>
+                <img src="alex.jpg" alt="Alex" class="profile-pic">
+                <p>Age: 21</p>
+                <p>Location: Bella Vista Village</p>
+                <p>Interests: Reading, Gaming, Coding</p>
+            </div>
+            <div class="profile-card" id="profile3">
+                <h3>Jordan</h3>
+                <img src="jordan.jpg" alt="Jordan" class="profile-pic">
+                <p>Age: 20</p>
+                <p>Location: Red Bank Village</p>
+                <p>Interests: Photography, Traveling, Music</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div id="forms" class="section">
+        <h2>Sign-Up Form</h2>
+        <form onsubmit="submitForm(event)">
+            <label for="first-name">First Name:</label><br>
+            <input type="text" id="first-name" name="first-name" required><br>
+
+            <label for="last-name">Last Name:</label><br>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="student-id">Student ID:</label><br>
+            <input type="text" id="student-id" name="student-id" required><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="residence">Where You Reside:</label><br>
+            <input type="text" id="residence" name="residence" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="thank-you-message" style="display:none;">Thank you for signing up! We'll be in touch soon.</p>
+    </div>
+
+    <div class="slideshow-container" id="slideshow">
+        <div class="mySlides">
+            <img src="download.1.jfif" class="slideshow-image" alt="Study Group 1">
+        </div>
+        <div class="mySlides">
+            <img src="download.2.jfif" class="slideshow-image" alt="Study Group 2">
+        </div>
+        <div class="mySlides">
+            <img src="download.3.jfif" class="slideshow-image" alt="Study Group 3">
+        </div>
+        <div class="mySlides">
+            <img src="download.4.jfif" class="slideshow-image" alt="Study Group 4">
+        </div>
+    </div>
+
+    <footer>
+    <p>&copy; 2024 Spencer's Study Group. All rights reserved.</p>
+    <p> Whether you’re looking to tackle difficult subjects or just want a group to keep you motivated, we’ve got you covered.</p>
+</footer>
+
+    <script>
+        let slideIndex = 0;
+        let slideshowInterval;
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+        function startSlideshow() {
+            slideshowInterval = setInterval(showSlides, 3000);
+            showSlides();
+        }
+
+        function stopSlideshow() {
+            clearInterval(slideshowInterval);
+        }
+
+        function showSection(sectionId) {
+            document.getElementById("slideshow").style.display = "none";
+            stopSlideshow();
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function showSlideshow() {
+            const slideshow = document.getElementById("slideshow");
+            slideshow.style.display = "block";
+            startSlideshow();
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            document.getElementById('thank-you-message').style.display = 'block';
+        }
+
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
+
+</body>
+</html>
