@@ -159,45 +159,47 @@
         </div>
     </div>
 
-<div id="rock,paper,scissors" class="section" >
-        <h2>Rock, Paper, Scissors Game</h2>
-        <div class="rps-game">
-            <h3>Choose Your Option:</h3>
-            <div class="rps-container">
-                <img id="rock" class="rps-option" src="rock.jpeg" alt= "Rock" onclick="playGame('rock')">
-                <img id="paper" class="rps-option" src="paper.jpeg" alt="Paper" onclick="playGame('paper')">
-                <img id="scissors" class="rps-option" src="scissors.jpeg" alt="Scissors" onclick="playGame('scissors')">
-            </div>
-            <p class="rps-result" id="game-result"></p>
+<div id="rock-paper-scissors" class="section" style="background-color: grey; padding: 20px; margin: 20px 0; border-radius: 10px;">
+    <h2>Rock, Paper, Scissors Game</h2>
+    <div class="rps-game">
+        <h3>Choose Your Option:</h3>
+        <div class="rps-container" style="display: flex; gap: 10px; justify-content: center;">
+            <img id="rock" class="rps-option" src="rock.jpeg" alt="Rock" onclick="playGame('rock')" style="width: 100px; cursor: pointer;">
+            <img id="paper" class="rps-option" src="paper.jpeg" alt="Paper" onclick="playGame('paper')" style="width: 100px; cursor: pointer;">
+            <img id="scissors" class="rps-option" src="scissors.jpeg" alt="Scissors" onclick="playGame('scissors')" style="width: 100px; cursor: pointer;">
         </div>
-    </div> 
-	
+        <p class="rps-result" id="game-result" style="margin-top: 15px; text-align: center; font-weight: bold;"></p>
+    </div>
+</div>
+
     <footer>
     <p>&copy; 2024 Spencer's Study Group. All rights reserved.</p>
     <p> Whether you’re looking to tackle difficult subjects or just want a group to keep you motivated, we’ve got you covered.</p>
 </footer>
 
     <script>
-	    function playGame(userChoice) {
-            const choices = ['rock', 'paper', 'scissors'];
-            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-            const resultElement = document.getElementById('game-result');
-            let result = '';
+	  
+    function playGame(userChoice) {
+        const choices = ['rock', 'paper', 'scissors'];
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        const resultElement = document.getElementById('game-result');
+        let result = '';
 
-            if (userChoice === computerChoice) {
-                result = `It's a draw! Both chose ${userChoice}.`;
-            } else if (
-                (userChoice === 'rock' && computerChoice === 'scissors') ||
-                (userChoice === 'paper' && computerChoice === 'rock') ||
-                (userChoice === 'scissors' && computerChoice === 'paper')
-            ) {
-                result = `You win! ${userChoice} beats ${computerChoice}.`;
-            } else {
-                result = `You lose! ${computerChoice} beats ${userChoice}.`;
-            }
-
-            resultElement.textContent = result;
+        if (userChoice === computerChoice) {
+            result = `It's a draw! Both chose ${userChoice}.`;
+        } else if (
+            (userChoice === 'rock' && computerChoice === 'scissors') ||
+            (userChoice === 'paper' && computerChoice === 'rock') ||
+            (userChoice === 'scissors' && computerChoice === 'paper')
+        ) {
+            result = `You win! ${userChoice} beats ${computerChoice}.`;
+        } else {
+            result = `You lose! ${computerChoice} beats ${userChoice}.`;
         }
+
+        resultElement.textContent = result;
+    }
+
         let slideIndex = 0;
         let slideshowInterval;
 
